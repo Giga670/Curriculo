@@ -3,71 +3,108 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Curriculo</title>
     <link rel="stylesheet" href="estilo.css" />
   </head>
   <body>
     <header>
-      <div class="profile"><!--inicia a divisão de tela para a foto de perfil-->
+      <div class="profile">
+        <!--inicia a divisão de tela para a foto de perfil-->
         <img
-        src="https://th.bing.com/th/id/OIP.EDHC_BasNREfkaxQZSv9HgHaHa?w=217&h=217&c=7&r=0&o=5&pid=1.7"
-        alt="foto de perfil"
-        sizes=""
-        srcset=""
-      />
-    </div>
-    <div class="links"><!-- inicia a divisão de tela para os links-->
-      <a target="_blank" href="https://github.com/">GitHub</a>
-      <a target="_blank" href="https://br.linkedin.com/">Linkedin</a>
-      <a target="_blank" href="https://www.youtube.com/">YouTube</a>
-    </div>
+          src="https://th.bing.com/th/id/OIP.EDHC_BasNREfkaxQZSv9HgHaHa?w=217&h=217&c=7&r=0&o=5&pid=1.7"
+          alt="foto de perfil"
+          sizes=""
+          srcset=""
+        />
+      </div>
+      <div class="links">
+        <!-- inicia a divisão de tela para os links-->
+        <a target="_blank" href="https://github.com/">GitHub</a>
+        <a target="_blank" href="https://br.linkedin.com/">Linkedin</a>
+        <a target="_blank" href="https://www.youtube.com/">YouTube</a>
+      </div>
     </header>
-     <!--vamos omeçar a trabalhar com o corpo do curriculo-->
-     <div><section class="descricao">
+
+    <!--vamos omeçar a trabalhar com o corpo do curriculo-->
+    <div>
+      <section class="descricao">
         <p>coloque uma breve descrição</p>
-    </section></div>
-   <!--vamos começar a trabalhar o primeiro bloco-->
+        <button id="botao"> fale comigo</button>
+      </section>
+    </div>
+    <!--vamos começar a trabalhar o primeiro bloco-->
     <section class="conteudo">
-        <div class="bloco">
-            <h2>Experiências Anteriores</h2>
-            <p>cite aqui sua experiências anteriores</p>
-        </div>
-        <div class="bloco">
-            <h2>Formação Acadêmica</h2>
-            <p>cite aqui suas formações acadêmicas</p>
-        </div>
-        <div class="bloco">
-            <h2>Particiáção em projetos e Eventos</h2>
-            <p>cite aqui sua participação em projetos e eventos</p>
-        </div>
- </section>
- <!-- aqui vai ser o formulario-->
- <section class="falacomigo">
-    <h2> Interessado no meu curriculo?</h2>
-    <form>
-        <label for="email">Email:</label>
-        <input placeholder="exemple@exemple.com"type="email" id="email" nome="email" required>
-        <label for="telefone">Telefone:</label>
-        <input placeholder="(66)*****-****"="telefone" id="tlefone" name="telefone" required>
-        <button type="submit"> entrar em contato</button>
-    </form>
- </section>
- <footer>
-    <section class="conteudo">
-        <div class="bloco">
-            <h2>Sobre Mim</h2>
-            <p>Insira coisas sobre você, como seus gostos</p>
-        </div>
-        <div class="bloco">
-            <h2>Meu Canal</h2>
-            <iframe width="180" height="100" src="https://www.youtube.com/embed/HtdWIFrx3g8?si=ub9RbvQfuojBtKzs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <div class="bloco">
-            <h2> Mensagem Positiva</h2>
-            <p>Se nada mudar, invente,
-                e quando mudar, entenda.</p>
-        </div>
+      <div class="bloco">
+        <h2>Experiências Anteriores</h2>
+        <p>cite aqui sua experiências anteriores</p>
+      </div>
+      <div class="bloco">
+        <h2>Formação Acadêmica</h2>
+        <p>cite aqui suas formações acadêmicas</p>
+      </div>
+      <div class="bloco">
+        <h2>Particiáção em projetos e Eventos</h2>
+        <p>cite aqui sua participação em projetos e eventos</p>
+      </div>
     </section>
- </footer>
+    <!-- aqui vai ser o formulario-->
+    <section class="falacomigo">
+      <h2>Interessado no meu curriculo?</h2>
+      <form action="https://formspree.io/f/mqaqkpzq" method="POST">
+        <label for="email">Email:</label>
+        <input
+          placeholder="exemple@exemple.com"
+          type="email"
+          id="email"
+          nome="email"
+          required
+        />
+        <label for="telefone">Telefone:</label>
+        <input
+          placeholder="(66)*****-****"
+          type="telefone"
+          id="telefone"
+          name="telefone"
+          required
+        />
+        <button id="botao" type="submit">entrar em contato</button>
+      </form>
+    </section>
+    <footer>
+      <section class="conteudo">
+        <div class="bloco">
+          <div id="card">
+          <h2>Sobre Mim</h2>
+          <p>Insira coisas sobre você, como seus gostos</p>
+        </div>
+        </div>
+
+        <div class="bloco">
+          <h2>Meu Canal</h2>
+          <iframe
+            width="180"
+            height="100"
+            src="https://www.youtube.com/embed/HtdWIFrx3g8?si=ub9RbvQfuojBtKzs"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+      </div>
+        <div class="bloco">
+          <h2>Mensagem Positiva</h2>
+          <p>Se nada mudar, invente, e quando mudar, entenda.</p>
+      </section>
+    </footer>
+    </div>
+  <script src="index.js"></script>
   </body>
 </html>
